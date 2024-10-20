@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+/*header*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar .logo{
+    width: 100px;
+    cursor: pointer;
+}
+ .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.nav ul a {
+    text-decoration: none;
+}
+.nav ul a li{
+    list-style: none;
+    color: #666;
+    padding: 10px 15px; 
+}
+.nav ul a li:hover{
+    color: #888;
+}
+
+.sidebar{
+    padding: 10px 10px;
+}
+.sidebar input{
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 14px;
+    background: #444;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.sidebar input:hover{
+    background: #555;
+    color: #f0e6e6;
+}
+.sidebar #icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px ;
+    padding-right: 10px;
+    cursor: pointer;
+    background: #000;
+}
+
+.sidebar #icons:hover{
+    background: #444;
+}
+/* hero-section---header*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: 10px 15px;
+}
+.hero h1{
+    font-size: 36px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.hero h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.hero button{
+    font-size: 16px;
+    font-weight: 400;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+}
+.hero .btn-1{
+    background: #fff;
+}
+.hero .btn-1:hover{
+    background: #e6dede;
+}
+.hero .btn-2{
+    background: #000;
+    color: #fff;
+}
+.hero .btn-2:hover{
+    background: #333;
+}
+/* hero-navbar*/
+.hero-navbar ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 10px;
+    font-size: 10px;
+}
+.hero-navbar ul a {
+    text-decoration: none;
+}
+.hero-navbar ul li{
+    list-style: none;
+    color: #333;
+    background: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.hero-navbar ul li:hover{
+    color: #fff;
+    background: #333;
+}
+/* hero-section*/
+
+.hero-body{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #333;
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 10px 30px;
+}
+.hero-body #email-section #emailSelect{
+    border: 1px solid #444;
+    padding: 10px 10px;
+    width: max-content;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-body .hero-btn-type-1 a{
+text-decoration: none;
+}
+.hero-body .hero-btn-type-1 ul{
+   
+  width: max-content;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.hero-body .hero-btn-type-1 ul li{
+    list-style: none;
+    color: #fff;
+    padding: 10px 25px;
+    background: #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero-body .hero-btn-type-1 ul li:hover{
+    background: #333;
+}
+.hero-body .hero-btn-type-1 ul li:active{
+    background: #333;
+}
+.hero-body .hero-btn-type-1 ul li #icons-hero{
+    padding-right: 20px;
+    
+}
+/* hero-body part 2*/
+
+.hero-body .hero-btn-type-2 a{
+    text-decoration: none;
+    }
+    .hero-body .hero-btn-type-2 ul{
+    
+      width: max-content;
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+    .hero-body .hero-btn-type-2 ul li{
+        list-style: none;
+        color: #fff;
+        padding: 10px 20px;
+        background: #000;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .hero-body .hero-btn-type-2 ul li:hover{
+        background: #333;
+    }
+    .hero-body .hero-btn-type-2 ul li:active{
+        background: #333;
+    }
+    .hero-body .hero-btn-type-2 ul li #icons-hero{
+        padding-right: 20px;
+        
+    }
+    
+    .hero-body .indox-section{
+        position: absolute;
+        top: 65%;
+        left: 30%;
+        display: flex;
+       width: 40%;
+       height: 80vh;
+       flex-direction: column; 
+    }
+    
+    .hero-body .indox-section .search-section input{
+        background: #000;
+        color: #fff;
+        border: 1px solid #333;
+        width: fit-content;
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .hero-body .indox-section .search-section i{
+        position: absolute;
+        left: 20px;
+        top: 2.5%; 
+    }
+    .hero-body .mail{
+        margin-top: 20px;
+        margin-bottom: 5px;
+        width: 80%;
+        border: 1px solid #333;
+        padding: 10px;
+        border-radius: 5px;
+        background: #000;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+     .hero-body .indox-section .scrollbar-container {
+        margin-top: 20px ;
+        padding-bottom: 20px;
+        width: 100%;           
+        height: 100%;          
+        overflow-y: scroll;     
+               
+    }
+    .hero-body .indox-section .scrollbar-container::-webkit-scrollbar{
+        width: 12px;
+    }
+    .hero-body .indox-section .scrollbar-container::-webkit-scrollbar-track{
+        background: #000;
+    }
+
+    .hero-body .indox-section .scrollbar-container::-webkit-scrollbar-thumb{
+        background: #333;
+        border-radius: 6px;
+    }
+    .hero-body .mail:hover{
+        background: #222;
+    }
+    .hero-body .mail h4{
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    
+    .hero-body .mail h5{
+        font-size: 12px;
+        font-weight: 0;
+    }
+    .hero-body .mail #mail-inbox{
+        font-size: 14px;
+        padding: 10px 0px;
+    }
+    /* hero section inside mail*/
+
+   .hero-body .inside-mail .inside-mail-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 65%;
+    left: 90%;
+   }
+   .hero-body .inside-mail .inside-mail-icons a {
+    text-decoration: none;
+   }
+   .hero-body .inside-mail .inside-mail-icons a i{
+    padding: 0px 20px;
+
+   }
+  /* profile- picture*/
+
+
+.hero-body .inside-mail .mail-inside-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 75%;
+    left: 70%
+}
+.hero-body .inside-mail .mail-inside-container .profile-picture{
+   background: #333;
+   font-size: 15px;
+    width: 15%;
+   height: 6vh;
+    border-radius: 100%;
+  padding: 10px 10px;
+  margin-bottom: 220px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.hero-body .inside-mail .mail-inside-container .profile-picture h4{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.hero-body .inside-mail .mail-inside-container .profile-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.hero-body .inside-mail .mail-inside-container .profile-info h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero-body .inside-mail .mail-inside-container .profile-info h4{
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.hero-body .inside-mail .mail-inside-container .profile-info .to-email{
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 5px;
+}
+.hero-body .inside-mail .mail-inside-container .profile-info .text-content{
+    margin-right: 50px;
+   margin-bottom: 40px;
+    padding-top: 60px;
+}
