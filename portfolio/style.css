@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root{
+    --background-color: #fff;
+    --font-color: #000;
+    --icons-color: #555; 
+    --hover-color: #999;
+}
+/* header-section */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+   padding: 10px 50px;
+
+} 
+header h3{
+    font-size: 24px;
+    color: #777;
+    font-weight: 0;
+    cursor: pointer;
+} 
+header .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+header ul a{
+    text-decoration: none;
+}
+header ul a li{
+    list-style: none;
+    color: var(--font-color);
+    padding: 10px 20px;
+    background: var(--background-color);
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+header ul a li:hover{
+    background: var(--hover-color);
+}
+
+/* hero-section start*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px;
+}
+.hero-section img{
+    width: 50%;
+    border-radius: 50%;
+    height: 70vh;
+}
+.hero-section .hero-text{
+    padding: 30px;
+    text-align: center;
+}
+.hero-section .hero-text h1{
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+.hero-section .hero-text h1 a{
+    text-decoration: none;
+}
+.hero-section .hero-text h1 span{
+    color: aqua;
+    cursor: pointer;
+}
+
+.hero-section .hero-text h5{
+font-size: 16px;
+font-weight: 200;
+}
+/* icons start*/
+.icons-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 63%;
+  left: 60%;
+
+}
+ .icons-text .hero-btn .buttonDownload{
+    font-size: 16px;
+    color: #000;
+    background: #fff;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+  .icons-text .hero-btn .buttonDownload:hover{
+    background: rgb(5, 224, 34);
+    color: #fff;
+}
+ .icons-text .hero-btn .buttonContact{
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 10px;
+}
+ .icons-text .hero-btn .buttonContact:hover{
+    background: rgb(5, 224, 34);  
+    color: #000;
+}
+.icons-text .hero-icons{
+padding: 10px;
+}
+.icons-text .hero-icons a{
+    text-decoration: none;
+}
+.icons-text .hero-icons a i{
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.icons-text .hero-icons a i:hover{
+    background: #777;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    text-align: center;
+}
+.footer .footer-text h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer .footer-text h4{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 0px;
+  
+}
+
+
+.footer .footer-info h5{
+font-size: 16px;
+font-weight: 400;
+padding: 10px;
+
+}
+.footer .footer-info input{
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #e7dbdb;
+    color: #000;
+    text-align: center;
+}
+
+.footer .footer-info button{
+    font-size: 16px;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer .footer-info button:hover{
+    background: rgb(71, 230, 71);
+    color: #333;
+}
+
+/* about section*/
+
+.about-header{
+text-align: center;
+padding: 50px 0px;
+}
+.about-header h4{
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px;
+}
+.about-header h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+/* about hero*/
+.about-hero{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+}
+.about-hero .about-img{
+   font-size: 16px;
+   font-weight: 400;
+   padding: 10px 20px;
+}
+.about-hero .about-img img{
+    width: 90%;
+    border-radius: 40%;
+}
+.about-hero .about-img h5{
+    text-align: center;
+    padding: 20px;
+}
+.about-hero .about-img h5 img{
+    width: 2.5%;
+}
+.about-hero .hero-intro p{
+font-size: 16px;
+font-weight: 400;
+padding: 20px 10px;
+}
+.about-hero .hero-intro .skills {
+margin: 30px 0px;
+}
+.about-hero .hero-intro .skills h2{
+padding-bottom: 20px;
+}
+.about-hero .hero-intro .skills ul{
+    font-size: 16px;
+    font-weight: 200;
+    display: flex;
+}
+.about-hero .hero-intro .skills li{
+    list-style: none;
+    padding: 10px;
+    background: #999;
+    border-radius: 10px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.about-hero .hero-intro .skills li:hover{
+    color: #fff;
+    background: #111;
+}
+.about-hero .hero-intro .skills li i{
+    padding: 0px 5px;
+}
+/*projects-section*/
+.projects-hero{
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+}
+
+.projects-hero .projects-text{
+    padding: 30px 10px;
+    text-align: center;
+}
+.projects-hero .projects-text h4{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.projects-hero .projects-text h2{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+}
+.projects-hero .project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-wrap: wrap;
+   cursor: pointer;
+}
+.projects-hero .project .project-section{
+    width: 25%;
+    border: 1px solid #333;
+    padding: 10px 0px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+.projects-hero .project .project-section img{
+    width: 80%;
+    height: 40vh;
+    border-radius: 30px;
+}
+
+
+.projects-hero .project .project-section p{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+
+
+.button1 {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+  }
+  
+  .button1:hover {
+    transform: translateY(-3px);
+    background-color: #20c200;
+  }
+  
+  .button1-span {
+    color: #aaa;
+  }
+  /* experience-section*/
+  .experience-hero{
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .experience-hero h1{
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .experience-hero h2{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+  }
+ 
